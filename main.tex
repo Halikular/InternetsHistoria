@@ -6,7 +6,9 @@
 \usepackage[affil-it]{authblk}
 \usepackage{verbatim}
 \usepackage{microtype}
+\usepackage{sidecap}
 \usepackage{amssymb}
+\usepackage{wrapfig}
 \usepackage{tocloft}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
@@ -37,7 +39,7 @@ sorting=none
 	\vspace{2cm}
 	{\Large\itshape Adam Blomberg\par}
 	\vfill
-\animategraphics[width=1\textwidth]{12}{Bilder/grandmaSurf/grandma-}{0}{18}
+\animategraphics[autoplay,loop,width=1\textwidth]{12}{Bilder/grandmaSurf/grandma-}{0}{18}
 	\vfill
 
 % Bottom of the page
@@ -47,18 +49,70 @@ sorting=none
 \tableofcontents
 \newpage
 
+\section{Introduktion}
+För närvarande är internet bland det hetaste ämnet inom nutida data-
+och populärvetenskap. Webbens enorma framgång de senaste åren är väldigt svår
+att undgå. Det finns en uppsjö av webbartiklar inom massmedia, och termer
+inkluderar kryptiska sammansatta bokstäver och tecken som ofta börjar med
+``http://'' blir allt vanligare. Vad som fattas från de nuvarnade beskrivningen
+av nätet är en diskution om intenets 30-åriga historia av forskning och
+utvecklling som har skapat de underliggande teknologier av vilka webben är
+baserad på. Mycket av denna grund var lagd på 1960-talet av Douglas Engelbart.
+Jag kommer att göra en grundlig sammanfattning av internets historia från tidiga
+60-tal till nutid för att få en inblick i utvecklingen av det mytomspunna
+artificiella nätverk vi kallar Internet.
+
 \section{Där det hela började}
 
-Det var tidigt 60-tal och Joseph Licklider hade redan storslagna planer om ett intergalaktiskt nätverk. Hans vision var ett globalt sammanlänkat nätverk av datorer som alla med tillgång till nätverket snabbt skulle kunna hämta data och program från alla webbsidor. Man skulle kunna säga att han var mycket före sin tid eftersom att hans vision sedan blev verklighet under 2000-talet. Syftet var att skapa ett säkert och decentraliserat nätverk som inte kunde slås ut av något främmande främmande land, främst Sovjetunionen. Arpanet skapades av den amerikanska forskningsanstalten \textit{Advanced Research Projects Agency,} ARPA år 1969. Det fanns endast en omfattande aktör inom  telekombranchen vilket var AT\&T som nästan hade monopol, de ägde telefonledningarna som så småningom om skulle komma att användas till att koppla ihop datorerna i ARPANET. Universitetet UCLA i Kaliforninen skickade det första meddelandet vilket var kommandot "LOG", som skulle användas för att fjärrlogga in på en annan dator. Mottagardatron krashade dock innan den hunnit ta emot hela kommandot, meddelandet som skickades blev istället "LO". Det är en historisk händelse då datorer för första gången har pratat med varandra.
+Det var tidigt 60-tal och Joseph Licklider hade redan storslagna planer om ett
+intergalaktiskt nätverk. Hans vision var ett globalt sammanlänkat nätverk av
+datorer som alla med tillgång till nätverket snabbt skulle kunna hämta data och
+program från alla webbsidor. Man skulle kunna säga att han var mycket före sin
+tid eftersom att hans vision sedan blev verklighet under 2000-talet. Syftet var
+att skapa ett säkert och decentraliserat nätverk som inte kunde slås ut av något
+främmande främmande land, främst Sovjetunionen. Arpanet skapades av den
+amerikanska forskningsanstalten \textit{Advanced Research Projects Agency,} ARPA
+år 1969. Det fanns endast en omfattande aktör inom telekombranchen vilket var
+AT\&T som nästan hade monopol, de ägde telefonledningarna som så småningom om
+skulle komma att användas till att koppla ihop datorerna i ARPANET.
+Universitetet UCLA i Kaliforninen skickade det första meddelandet vilket var
+kommandot "LOG", som skulle användas för att fjärrlogga in på en annan dator.
+Mottagardatron krashade dock innan den hunnit ta emot hela kommandot,
+meddelandet som skickades blev istället "LO". Det är en historisk händelse då
+datorer för första gången har pratat med varandra.
 
-På tal om Sovjet, de hade en liknande ide. Kort därefter att J. Licklider talat om sina tankar, börjar Viktor Glushkov berätta om sin liknande plan med namnet OGAS. Detta går att jämnföra med Rymdkapplöpningen som ägde rum mellan 50- till 60-tal. Det var tänkt att OGAS skulle var uppdelat i tre lager, enligt Glushkov. Nätverket skulle ha sitt styre i Moskva med totalt 20.000 sammankopplade datorer genom Sovjetunionen. Datan skulle passera genom det redan existerande telefonledningarna på en frekvens som då inte var utnyttjad av telefonsamtalen, men ju mer data som behöver passera genom telefonledningarna desto större behöver frekvensspannet att vara. Till en viss punkt kan du inte göra spannet större och du har då kommit till en slutpunkt. Under denna tid var inte detta ett stort problem, men med tiden började vi ladda ned mer och strömma video. Det är därför fiber används istället nu för tiden eftersom att den har mycket större bandbredd.
+På tal om Sovjet, de hade en liknande ide. Kort därefter att J. Licklider talat
+om sina tankar, börjar Viktor Glushkov berätta om sin liknande plan med namnet
+OGAS. Detta går att jämnföra med Rymdkapplöpningen som ägde rum mellan 50- till
+60-tal. Det var tänkt att OGAS skulle var uppdelat i tre lager, enligt Glushkov.
+Nätverket skulle ha sitt styre i Moskva med totalt 20.000 sammankopplade datorer
+genom Sovjetunionen. Datan skulle passera genom det redan existerande
+telefonledningarna på en frekvens som då inte var utnyttjad av telefonsamtalen,
+men ju mer data som behöver passera genom telefonledningarna desto större
+behöver frekvensspannet att vara. Till en viss punkt kan du inte göra spannet
+större och du har då kommit till en slutpunkt. Under denna tid var inte detta
+ett stort problem, men med tiden började vi ladda ned mer och strömma video. Det
+är därför fiber används istället nu för tiden eftersom att den har mycket större
 
-{\centering
-\includegraphics[width=1\linewidth]{Bilder/bandbredd.jpg}
-\captionof{figure}{Som vi kan se i denna illustration används majoriteten av bandbredden i telefonledningarna till data överföring vilket omfattar faxmedelanden, men främst internetanvänding.}
-} \newpage
+\begin{wrapfigure}{r}{0.7\textwidth}
+  \vspace{-7pt}
+  \centering
+  \includegraphics[width=1.0\linewidth]{Bilder/bandbredd.jpg}
+  \captionof{figure}{Som vi kan se i denna illustration används majoriteten av
+    bandbredden i telefonledningarna till data överföring vilket omfattar
+    faxmedelanden, men främst internetanvänding.}
+\end{wrapfigure}
 
-Tanken var att de skulle kunna kommunicera med varandra på en decentraliserad nivå -- utan att behöva passera genom Moskva. Det var senare tänkt att under etapp två -- skulle resterande världen anslutats, främst Europa och Asien. USA var inte ens på kartan på grund av de dåliga relationerna mellan Sovietunionen och USA. Alla fabriker och kontorskomplex skulle vara uppkopplat. Det var en genialisk idé enligt Glushkov själv. Genom nätverket skulle framförallt betalningar ske digitalt, ungefär som det sker idag via internetbankerna.
-
-Projektet blev dock aldrig en verklighet eftersom att Glushkov inte lyckades finansiera sitt projekt, han fick inte vidare finansiering av regeringen. Vid det laget har Arpanet redan slagit rot, som senare kommer att bli det vi idag kallar internet. Det var först 1969 som det första meddelandet skickades på Arapanet.
+Tanken var att de skulle kunna kommunicera med varandra på en decentraliserad
+nivå -- utan att behöva passera genom Moskva. Det var senare tänkt att under
+etapp två -- skulle resterande världen anslutats, främst Europa och Asien. USA
+var inte ens på kartan på grund av de dåliga relationerna mellan Sovietunionen
+och USA. Alla fabriker och kontorskomplex skulle vara uppkopplat. Det var en
+genialisk idé enligt Glushkov själv. Genom nätverket skulle framförallt
+betalningar ske digitalt, ungefär som det sker idag via internetbankerna.
+Projektet blev dock aldrig en verklighet eftersom att Glushkov inte lyckades
+finansiera sitt projekt, han fick inte vidare finansiering av regeringen. Vid
+det laget har Arpanet redan slagit rot, som senare kommer att bli det vi idag
+kallar internet. Det var först 1969 som det första meddelandet skickades på
+Arapanet.
 \end{document}
