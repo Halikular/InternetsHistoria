@@ -88,6 +88,8 @@ OGAS. Detta går att jämnföra med Rymdkapplöpningen som ägde rum mellan 50- 
 Nätverket skulle ha sitt styre i Moskva med totalt 20.000 sammankopplade datorer
 genom Sovjetunionen. Datan skulle passera genom det redan existerande
 
+\section{Teknologin bakom Internet}
+\subsection{Dataöverföring}
 telefonledningarna, men ju mer data som behöver passera genom telefonledningarna
 desto större behöver frekvensspannet att vara. Till en viss punkt kan du inte
 göra spannet större och du har då kommit till en slutpunkt, och du kan då inte
@@ -99,14 +101,7 @@ upplevelse. Det har därför varit en stor bidragande faktor till att streaming
 har blivit allt mer populärt, vårt TV tittande har blivit allt mer beroende av
 internet.
 
-telefonledningarna på en frekvens som då inte var utnyttjad av telefonsamtalen,
-men ju mer data som behöver passera genom telefonledningarna desto större
-behöver frekvensspannet att vara. Till en viss punkt kan du inte göra spannet
-större och du har då kommit till en slutpunkt. Under denna tid var inte detta
-ett stort problem, men med tiden började vi ladda ned mer och strömma video. Det
-är därför fiber används istället nu för tiden eftersom att den har mycket större
-
-\begin{wrapfigure}{r}{0.67\textwidth}
+\begin{wrapfigure}{R}{0.67\textwidth}
   \centering
   \includegraphics[width=1.0\linewidth]{Bilder/bandbredd.jpg}
   \captionof{figure}{Som vi kan se i denna illustration används majoriteten av
@@ -125,6 +120,30 @@ Projektet blev dock aldrig en verklighet eftersom att Glushkov inte lyckades
 finansiera sitt projekt, han fick inte vidare finansiering av regeringen. Vid
 det laget har Arpanet redan slagit rot, som senare kommer att bli det vi idag
 kallar internet. Det var först 1969 som det första meddelandet skickades på
-Arapanet. Datorer anslöt sig till ARPANET i rusande takt under de kommande åren. Mycket arbeta lades ned på att bland annat färdigställa funktionsduglig "Host to host" protokoll.
+Arapanet. 
+
+\subsection{Tidiga Internetprotokollen}
+Datorer anslöt sig till ARPANET i rusande takt under de kommande åren.
+Mycket arbeta lades ned på att bland annat färdigställa funktionsduglig "Host to
+host" protokoll, av dessa inkluderas NCP (Network Control Protocol) vilket blev
+klart för kommersiellt burk i December 1970. I takt med att ARPANET hemsidorna
+implementerat NCP under perioden 1971-1972, kunde användarna utveckla applikationer.
+Någon gång på tidigt 80-tal går ARPANET över från två-vägs\-kommunikation via NCP till
+det modernare och effektivare protokollet TCP/IP, som fortfarande används idag. Det
+går ut på att varje enhet som använder TCP/IP alltid kommer att ha en IP-adress
+tilldelad, anledningen är att datorer runt om i världen ska få korrekt paket
+skickade till sig. Om datorer från som är anslutna till samma router sker trafiken
+på samma IP-adress via internet. Detta innebär att datorerna måste ha olika interna
+IP-adresser. I det interna nätverket är ofta IP-adresserna dynamiska vilket innebär
+att den inte är fast och kan variera över tid, vilket oftast sker med hjälp av
+protokollet DHCF som tilldelar adressen automatiskt. TCP/IP fungerar liknande
+posten: de struntar i vad du skickar utan att innehållet kontrolleras, målet är att
+brevet eller paketet kommer fram. Det är inte säkert att paketet Kommer fram, i det
+fallet begärs återutsändning, när ett paket inte når destinationenen inom internet,
+kallas det för "packet loss". Från 80-talet  till början av 90-talet fanns det länge
+en konkurrent till TCP/IP, det grundar sig i att televerken i Europa förespråkade
+användandet av X.25-systemet, som förutom att vara säkert möjliggjorde myndigheterna
+att ta betalt för trafiken. I dag används den endast där hög säkerhet är av hög
+prioritet -- det vill säga kortterminaler, och uttagsautomater.
 
 \end{document}
