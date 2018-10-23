@@ -20,14 +20,16 @@
 \usepackage[version=4]{mhchem}
 \usepackage[swedish]{babel}
 \emergencystretch=1em
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{colorlinks,citecolor=red,linkcolor=red}
 \usepackage[
 backend=biber,
 style=numeric,
 sorting=none
 ]{biblatex}
-\usepackage{color}
-\usepackage{hyperref}
-\hypersetup{colorlinks,citecolor=red,linkcolor=red}
+
+\addbibresource{referenser.bib}
 
 \begin{document}
 
@@ -69,7 +71,7 @@ datorer som alla med tillgång till nätverket snabbt skulle kunna hämta data o
 program från alla webbsidor. Man skulle kunna säga att han var mycket före sin
 tid eftersom att hans vision sedan blev verklighet under 2000-talet. Syftet var
 att skapa ett säkert och decentraliserat nätverk som inte kunde slås ut av något
-främmande främmande land, främst Sovjetunionen. Arpanet skapades av den
+främmande främmande land, främst Sovjetunionen. \cite{internetmuseum} Arpanet skapades av den
 amerikanska forskningsanstalten \textit{Advanced Research Projects Agency,} ARPA
 år 1969. Det fanns endast en omfattande aktör inom telekombranchen vilket var
 AT\&T som nästan hade monopol, de ägde telefonledningarna som så småningom om
@@ -77,8 +79,8 @@ skulle komma att användas till att koppla ihop datorerna i ARPANET.
 Universitetet UCLA i Kaliforninen skickade det första meddelandet vilket var
 kommandot "LOG", som skulle användas för att fjärrlogga in på en annan dator.
 Mottagardatron krashade dock innan den hunnit ta emot hela kommandot,
-meddelandet som skickades blev istället "LO". Det är en historisk händelse då
-datorer för första gången har pratat med varandra.
+meddelandet som skickades blev istället ``LO". Det är en historisk händelse då
+datorer för första gången har pratat med varandra \cite{is}.
 
 \subsection{Slaget om internet}
 På tal om Sovjet, de hade en liknande ide. Kort därefter att J. Licklider talat
@@ -86,10 +88,11 @@ om sina tankar, börjar Viktor Glushkov berätta om sin liknande plan med namnet
 OGAS. Detta går att jämnföra med Rymdkapplöpningen som ägde rum mellan 50- till
 60-tal. Det var tänkt att OGAS skulle var uppdelat i tre lager, enligt Glushkov.
 Nätverket skulle ha sitt styre i Moskva med totalt 20.000 sammankopplade datorer
-genom Sovjetunionen. Datan skulle passera genom det redan existerande
+genom Sovjetunionen \cite{internetmuseum}.
 
 \section{Teknologin bakom Internet}
 \subsection{Dataöverföring}
+Datan skulle passera genom det redan existerande
 telefonledningarna, men ju mer data som behöver passera genom telefonledningarna
 desto större behöver frekvensspannet att vara. Till en viss punkt kan du inte
 göra spannet större och du har då kommit till en slutpunkt, och du kan då inte
@@ -99,7 +102,7 @@ video. Det är därför fiber har ersatt kopparledningarna för ökad bandbredd 
 nedladdnings hastighet. Fiber är nästan ett krav för att få ett bra streaming
 upplevelse. Det har därför varit en stor bidragande faktor till att streaming
 har blivit allt mer populärt, vårt TV tittande har blivit allt mer beroende av
-internet.
+internet \cite{koppar}.
 
 \begin{wrapfigure}{R}{0.67\textwidth}
   \centering
@@ -120,7 +123,7 @@ Projektet blev dock aldrig en verklighet eftersom att Glushkov inte lyckades
 finansiera sitt projekt, han fick inte vidare finansiering av regeringen. Vid
 det laget har Arpanet redan slagit rot, som senare kommer att bli det vi idag
 kallar internet. Det var först 1969 som det första meddelandet skickades på
-Arapanet. 
+Arapanet \cite{Wikipedia}.
 
 \subsection{Tidiga Internetprotokollen}
 Datorer anslöt sig till ARPANET i rusande takt under de kommande åren.
@@ -140,10 +143,11 @@ protokollet DHCF som tilldelar adressen automatiskt. TCP/IP fungerar liknande
 posten: de struntar i vad du skickar utan att innehållet kontrolleras, målet är att
 brevet eller paketet kommer fram. Det är inte säkert att paketet Kommer fram, i det
 fallet begärs återutsändning, när ett paket inte når destinationenen inom internet,
-kallas det för "packet loss". Från 80-talet  till början av 90-talet fanns det länge
+kallas det för "packet loss". \cite{Wikipedia} Från 80-talet  till början av 90-talet fanns det länge
 en konkurrent till TCP/IP, det grundar sig i att televerken i Europa förespråkade
 användandet av X.25-systemet, som förutom att vara säkert möjliggjorde myndigheterna
 att ta betalt för trafiken. I dag används den endast där hög säkerhet är av hög
 prioritet -- det vill säga kortterminaler, och uttagsautomater.
 
+\printbibliography
 \end{document}
